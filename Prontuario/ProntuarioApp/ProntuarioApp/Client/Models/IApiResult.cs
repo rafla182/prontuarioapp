@@ -7,9 +7,9 @@ namespace ProntuarioApp.Client.Models
     public interface IApiResult<T> : IApiMinify
     {
         bool Success { get; set; }
-        T Data { get; set; }
+        T Result { get; set; }
         string Message { get; set; }
-        string Id { get; set; }
+        string Code { get; set; }
         object ModelState { get; set; }
         string Url { get; set; }
     }

@@ -33,7 +33,7 @@ namespace ProntuarioApp.Views
                 //lvCustomers.ItemsSource = result.Data;
             }
 
-            App.Current.MainPage = new MainPage();
+            App.NavigateMasterDetail(new Patient(result.Result.FirstOrDefault()));
         }
 
     }

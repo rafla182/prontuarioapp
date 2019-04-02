@@ -16,13 +16,13 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/12.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "SlideOverKit/2.1.6.2": {
@@ -201,7 +201,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Dapper": "1.60.1",
-          "Newtonsoft.Json": "8.0.3",
+          "Newtonsoft.Json": "12.0.1",
           "SlideOverKit": "2.1.6.2",
           "Xamarin.Forms": "3.6.0.264807"
         },
@@ -228,13 +228,13 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/12.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "SlideOverKit/2.1.6.2": {
@@ -403,7 +403,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Dapper": "1.60.1",
-          "Newtonsoft.Json": "8.0.3",
+          "Newtonsoft.Json": "12.0.1",
           "SlideOverKit": "2.1.6.2",
           "Xamarin.Forms": "3.6.0.264807"
         },
@@ -430,13 +430,13 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/12.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "SlideOverKit/2.1.6.2": {
@@ -605,7 +605,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Dapper": "1.60.1",
-          "Newtonsoft.Json": "8.0.3",
+          "Newtonsoft.Json": "12.0.1",
           "SlideOverKit": "2.1.6.2",
           "Xamarin.Forms": "3.6.0.264807"
         },
@@ -632,13 +632,13 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/12.0.1": {
         "type": "package",
         "compile": {
-          "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "SlideOverKit/2.1.6.2": {
@@ -807,7 +807,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Dapper": "1.60.1",
-          "Newtonsoft.Json": "8.0.3",
+          "Newtonsoft.Json": "12.0.1",
           "SlideOverKit": "2.1.6.2",
           "Xamarin.Forms": "3.6.0.264807"
         },
@@ -838,29 +838,43 @@
         "lib/netstandard2.0/Dapper.xml"
       ]
     },
-    "Newtonsoft.Json/8.0.3": {
-      "sha512": "KGsYQdS2zLH+H8x2cZaSI7e+YZ4SFIbyy1YJQYl6GYBWjf5o4H1A68nxyq+WTyVSOJQ4GqS/DiPE+UseUizgMg==",
+    "Newtonsoft.Json/12.0.1": {
+      "sha512": "pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
       "type": "package",
-      "path": "newtonsoft.json/8.0.3",
-      "hasTools": true,
+      "path": "newtonsoft.json/12.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "LICENSE.md",
         "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.pdb",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.pdb",
         "lib/net35/Newtonsoft.Json.xml",
         "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.pdb",
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.pdb",
         "lib/net45/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.dll",
-        "lib/portable-net45+wp80+win8+wpa81+dnxcore50/Newtonsoft.Json.xml",
-        "newtonsoft.json.8.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "tools/install.ps1"
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.pdb",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.pdb",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.pdb",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
     "SlideOverKit/2.1.6.2": {
@@ -871,6 +885,7 @@
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/MonoAndroid10/SlideOverKit.Droid.dll",
+        "lib/MonoAndroid10/SlideOverKit.Droid.dll.mdb",
         "lib/MonoAndroid10/SlideOverKit.Droid.pdb",
         "lib/MonoAndroid10/SlideOverKit.dll",
         "lib/MonoAndroid10/SlideOverKit.pdb",
@@ -1253,11 +1268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projetos\\prontuarioapp\\ProntuarioApp\\ProntuarioApp\\ProntuarioApp.iOS\\ProntuarioApp.iOS.csproj",
+      "projectUniqueName": "D:\\projetos\\prontuario-app\\prontuarioapp\\Prontuario\\ProntuarioApp\\ProntuarioApp.iOS\\ProntuarioApp.iOS.csproj",
       "projectName": "ProntuarioApp.iOS",
-      "projectPath": "D:\\projetos\\prontuarioapp\\ProntuarioApp\\ProntuarioApp\\ProntuarioApp.iOS\\ProntuarioApp.iOS.csproj",
+      "projectPath": "D:\\projetos\\prontuario-app\\prontuarioapp\\Prontuario\\ProntuarioApp\\ProntuarioApp.iOS\\ProntuarioApp.iOS.csproj",
       "packagesPath": "C:\\Users\\rafae\\.nuget\\packages\\",
-      "outputPath": "D:\\projetos\\prontuarioapp\\ProntuarioApp\\ProntuarioApp\\ProntuarioApp.iOS\\obj\\",
+      "outputPath": "D:\\projetos\\prontuario-app\\prontuarioapp\\Prontuario\\ProntuarioApp\\ProntuarioApp.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1269,13 +1284,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.peixeurbano.local/nuget": {}
       },
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\projetos\\prontuarioapp\\ProntuarioApp\\ProntuarioApp\\ProntuarioApp\\ProntuarioApp.csproj": {
-              "projectPath": "D:\\projetos\\prontuarioapp\\ProntuarioApp\\ProntuarioApp\\ProntuarioApp\\ProntuarioApp.csproj"
+            "D:\\projetos\\prontuario-app\\prontuarioapp\\Prontuario\\ProntuarioApp\\ProntuarioApp\\ProntuarioApp.csproj": {
+              "projectPath": "D:\\projetos\\prontuario-app\\prontuarioapp\\Prontuario\\ProntuarioApp\\ProntuarioApp\\ProntuarioApp.csproj"
             }
           }
         }

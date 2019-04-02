@@ -29,8 +29,8 @@ namespace ProntuarioApp.Client
             try
             {
                 var json = await GetAsync(apiRoute);
-                var data = JsonConvert.DeserializeObject<TModel>(json, GetConverter());
-                var result = new OkApiResult<TModel>(data);
+                var data = JsonConvert.DeserializeObject<BaseApiResult<TModel>>(json, GetConverter());
+                var result = new OkApiResult<TModel>(data.Result);
 
                 callback?.Invoke(result);
 
@@ -46,7 +46,7 @@ namespace ProntuarioApp.Client
         {
             var url = _apiUrlBase + "/" + apiRoute;
 
-            _restClient = _restClient ?? new HttpClient();
+            _restClient = new HttpClient();
             _restClient.BaseAddress = new Uri(url);
 
             ClearReponseHeaders();
@@ -64,8 +64,8 @@ namespace ProntuarioApp.Client
             try
             {
                 var json = await PostAsync(apiRoute, body);
-                var data = JsonConvert.DeserializeObject<TModel>(json, GetConverter());
-                var result = new OkApiResult<TModel>(data);
+                var data = JsonConvert.DeserializeObject<BaseApiResult<TModel>>(json, GetConverter());
+                var result = new OkApiResult<TModel>(data.Result);
 
                 callback?.Invoke(result);
 

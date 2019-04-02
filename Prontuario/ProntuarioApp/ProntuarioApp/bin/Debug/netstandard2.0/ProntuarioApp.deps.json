@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "d2d6bfd8e521e8fb6084507be1e0d666cbc71ddd"
+    "signature": "5186e36381c0d083a1e9b55f80eaa82a82afdee2"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,9 +11,10 @@
         "dependencies": {
           "Dapper": "1.60.1",
           "NETStandard.Library": "2.0.3",
-          "Newtonsoft.Json": "8.0.3",
+          "Newtonsoft.Json": "12.0.1",
           "SlideOverKit": "2.1.6.2",
           "Xamarin.Forms": "3.6.0.264807",
+          "Mono.Android": "0.0.0.0",
           "Windows.Foundation.UniversalApiContract": "6.0.0.0",
           "Xamarin.Android.Support.v7.CardView": "1.0.0.0",
           "Xamarin.Forms.Platform.Android": "2.0.0.0"
@@ -54,11 +55,11 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "Newtonsoft.Json/8.0.3": {
+      "Newtonsoft.Json/12.0.1": {
         "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.3.19514"
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.22727"
           }
         }
       },
@@ -275,6 +276,14 @@
           }
         }
       },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
       "Windows.Foundation.UniversalApiContract/6.0.0.0": {
         "runtime": {
           "Windows.Foundation.UniversalApiContract.winmd": {
@@ -350,12 +359,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "Newtonsoft.Json/8.0.3": {
+    "Newtonsoft.Json/12.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KGsYQdS2zLH+H8x2cZaSI7e+YZ4SFIbyy1YJQYl6GYBWjf5o4H1A68nxyq+WTyVSOJQ4GqS/DiPE+UseUizgMg==",
-      "path": "newtonsoft.json/8.0.3",
-      "hashPath": "newtonsoft.json.8.0.3.nupkg.sha512"
+      "sha512": "sha512-pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "path": "newtonsoft.json/12.0.1",
+      "hashPath": "newtonsoft.json.12.0.1.nupkg.sha512"
     },
     "runtime.native.System.Data.SqlClient.sni/4.4.0": {
       "type": "package",
@@ -531,6 +540,11 @@
       "sha512": "sha512-PbnXpStyxNYJzPrXXMW17F4YeMsFAs6YT9LL2vxObDWCGtaKkLia4UyBPF3Qbhy+lQPeap/ijV1Rlvasp4DFiA==",
       "path": "xamarin.forms/3.6.0.264807",
       "hashPath": "xamarin.forms.3.6.0.264807.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     },
     "Windows.Foundation.UniversalApiContract/6.0.0.0": {
       "type": "reference",

@@ -16,20 +16,6 @@ namespace ProntuarioApp.Views.MasterPage
 	    {
 	        InitializeComponent();
 
-            ButtonPatient.Clicked += async (sender, e) =>
-            {
-                await App.NavigateMasterDetail(new Search() { Title = "Pesquisar Pacientes" });
-            };
-
-	        ButtonPerfil.Clicked += async (sender, e) =>
-	        {
-	            await App.NavigateMasterDetail(new Search() { Title = "Pesquisar Pacientes" });
-	        };
-
-	        ButtonHome.Clicked += async (sender, e) =>
-	        {
-	            await App.NavigateMasterDetail(new MainPage() { Title = "Home" });
-	        };
         }
     }
 }

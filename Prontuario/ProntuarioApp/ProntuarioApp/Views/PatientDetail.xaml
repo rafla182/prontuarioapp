@@ -6,8 +6,12 @@
              x:Class="ProntuarioApp.Views.PatientDetail">
     <ContentPage.Content>
         <StackLayout Padding="30" >
-            <Label Text="Dados"></Label>
-                
+            <Label Text="DADOS DO PACIENTE" TextColor="#000" FontAttributes="Bold"></Label>
+
+            <Label Text="{Binding Nome, StringFormat='Nome: {0:F0}'}"  FontSize="10"></Label>
+            <Label Text="{Binding Sexo, StringFormat='Sexo: {0:F0}'}"  FontSize="10"></Label>
+            <Label Text="{Binding Idade, StringFormat='Idade: {0:F0}'}"  FontSize="10"></Label>
+            <Label Text="{Binding DataNascimento, StringFormat='Data Nascimento: {0:dd/MM/yyyy}'}" FontSize="10"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

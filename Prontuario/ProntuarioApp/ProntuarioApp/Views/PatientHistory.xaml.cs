@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ProntuarioApp.Models;
+using ProntuarioApp.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,18 +13,25 @@ namespace ProntuarioApp.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PatientHistory : ContentPage
 	{
-		public PatientHistory()
-		{
-			InitializeComponent();
-
-		    List<ServicetHistory> list = new List<ServicetHistory>();
-		    list.Add(new ServicetHistory() { Hospital = "Hospital Praia da Costa", Doctor = "Dr. José Silva Santos", MedicalComplaint = "Dores forte de cabeça e náuseas", Level = "Médio" });
-		    list.Add(new ServicetHistory() { Hospital = "Hospital São Luis", Doctor = "Dr. João Pedro Soares Ferreira", MedicalComplaint = "Febre, congestionamento nasal, dores no corpo.", Level = "Leve" });
-
-		    PatientHistorys.ItemsSource = list;
+	    private readonly PacienteApiService _pacienteApiService;
 
 
+        public PatientHistory(Paciente paciente)
+	    {
+	        InitializeComponent();
+	        _pacienteApiService = new PacienteApiService(); // You can use Dependency Injection
+
+	        NomePaciente.Text = paciente.Nome;
+	        ListarAtendimentos(paciente.Id);
+	    }
+
+        private async void ListarAtendimentos(int id)
+        {
+            var result = await _pacienteApiService.ListarAtendimentos(id);
+            if (result.Success)
+            {
+                PatientHistorys.ItemsSource = result.Result.ToList();
+            }
         }
-
-	}
+    }
 }

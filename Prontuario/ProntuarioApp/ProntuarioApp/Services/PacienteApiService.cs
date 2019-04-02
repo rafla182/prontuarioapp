@@ -17,13 +17,23 @@ namespace ProntuarioApp.Services
     public sealed class PacienteApiService : ApiClient, IPacienteApiService
     {
 
-        public PacienteApiService() : base("http://localhost:59656/api")
+        public PacienteApiService() : base("https://prontuarioapp.azurewebsites.net/api")
         {
         }
 
         public async  Task<BaseApiResult<List<Paciente>>> BuscarTodosPacientes()
         {
-            return await ProntuarioApiService.Current.PostAsync<List<Paciente>>("pacientes/buscar", new BuscaRequest() { Nome = "Fabiana" });
+            return await ProntuarioApiService.Current.PostAsync<List<Paciente>>("pacientes/buscar", new BuscaRequest() { Nome = "Fabiana"} );
+        }
+
+        public async Task<BaseApiResult<List<Atendimento>>> ListarAtendimentos(int id)
+        {
+            return await ProntuarioApiService.Current.GetAsync<List<Atendimento>>("pacientes/atendimentos/" + id);
+        }
+
+        public async Task<BaseApiResult<List<Prescricao>>> ListarPrescricao(int id)
+        {
+            return await ProntuarioApiService.Current.GetAsync<List<Prescricao>>("pacientes/medicamentos/" + id);
         }
     }
 }

@@ -12,5 +12,7 @@ namespace ProntuarioApp.Services
     public interface IPacienteApiService : IApiClient
     {
         Task<BaseApiResult<List<Paciente>>> BuscarTodosPacientes();
+        //Task<BaseApiResult<List<Atendimento>>> ListarAtendimentos(int id);
+        //Task<BaseApiResult<List<Prescricao>>> ListarPrescricao(int id);
     }
 }

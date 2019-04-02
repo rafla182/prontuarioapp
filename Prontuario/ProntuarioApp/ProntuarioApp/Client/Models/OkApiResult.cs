@@ -10,14 +10,14 @@ namespace ProntuarioApp.Client.Models
         {
             Success = false;
             ModelState = null;
-            Id = null;
+            Code = null;
         }
 
         public OkApiResult(T data)
             : this()
         {
             Success = true;
-            Data = data;
+            Result = data;
         }
     }
 }
