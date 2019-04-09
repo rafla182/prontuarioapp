@@ -13,7 +13,9 @@
     <PackageReference Include="Dapper" Version="1.60.1" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="SlideOverKit" Version="2.1.6.2" />
+    <PackageReference Include="uikit" Version="2.25.0" />
     <PackageReference Include="Xamarin.Forms" Version="3.6.0.264807" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="3.6.0.264807" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,9 +25,27 @@
     <Compile Update="Views\MasterPage\Detail.xaml.cs">
       <DependentUpon>Detail.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\Atendimentos.xaml.cs">
+      <DependentUpon>Atendimentos.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DadosPaciente.xaml.cs">
+      <DependentUpon>DadosPaciente.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MeusPacientes.xaml.cs">
+      <DependentUpon>MeusPacientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Prescricoes.xaml.cs">
+      <DependentUpon>Prescricoes.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\Cirurgias.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ListaPacientes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -35,16 +55,22 @@
     <EmbeddedResource Update="Views\MasterPage\Detail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\Patient.xaml">
+    <EmbeddedResource Update="Views\MeusPacientes.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\PatientDetail.xaml">
+    <EmbeddedResource Update="Views\Menu.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\PatientHistory.xaml">
+    <EmbeddedResource Update="Views\DadosPaciente.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\PatientMedical.xaml">
+    <EmbeddedResource Update="Views\Atendimentos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Prescricoes.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Perfil.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Search.xaml">
@@ -53,10 +79,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Perfil\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Reference Include="FormsViewGroup">
+      <HintPath>C:\Users\rafae\.nuget\packages\xamarin.forms\3.6.0.220655\lib\MonoAndroid90\FormsViewGroup.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v9.0\Mono.Android.dll</HintPath>
     </Reference>

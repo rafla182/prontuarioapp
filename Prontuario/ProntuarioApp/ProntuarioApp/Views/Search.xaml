@@ -2,19 +2,34 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProntuarioApp.Views.Search"
-             Title="Pesquisar Paciente">
+             Title="Pesquisar Paciente" Visual="Material">
     <ContentPage.Content>
-        <StackLayout Padding="10">
-            <Label Text="Informe o paciente"
-                   VerticalOptions="Center" 
-                   HorizontalOptions="Center" />
-            <SearchBar 
-                       CancelButtonColor="IndianRed"
-                       Placeholder="Paciente"
-                       x:Name="Nome"
+        <AbsoluteLayout  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <StackLayout>
+                <Image Source="prontuario.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150"></Image>
+                <Label Text="Buscar paciente para obter prontuário"
+                       Font="16"
+                       HorizontalOptions="CenterAndExpand"/>
+                <SearchBar 
+                    CancelButtonColor="IndianRed"
+                    Placeholder="Paciente"
+                    FontSize="14"
+                    HorizontalOptions="Start"
+                    x:Name="Nome"
                 ></SearchBar>
-            <!--<Entry Placeholder="" FontSize="Small"></Entry>-->
-            <Button  BackgroundColor="#60ADDE" FontSize="Small" TextColor="#FFF" Text="Buscar"  Clicked="SearchPatient"></Button>
-        </StackLayout>
+                <Button  BackgroundColor="#60ADDE" FontSize="14" TextColor="#FFF"  HorizontalOptions="FillAndExpand" Text="Buscar"  Clicked="SearchPaciente"></Button>
+                <Label  IsVisible="{Binding IsErro}"
+                       x:Name="Erro"
+                       Font="16"
+                        TextColor="DarkGray"
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout IsVisible="{Binding IsLoading}" Padding="12"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+                <ActivityIndicator IsRunning="{Binding IsLoading}" Color ="#80000000"/>
+            </StackLayout>
+        </AbsoluteLayout>
+
     </ContentPage.Content>
 </ContentPage>

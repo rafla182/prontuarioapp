@@ -33,10 +33,13 @@ D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\mipmap-xxxhdpi\launcher_foreground.png
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\prontuario.png
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\user.png
-D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\home.png
-D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\doctor.png
-D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\avatar.png
-D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\medicine.png
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\values\my_style.xml
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\prescricoes.png
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\paciente.png
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\cirurgias.png
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\atendimentos.png
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\medico.png
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\res\drawable\dadosgerais.png
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\R.cs.flag
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\R.txt
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\uploadflags.txt
@@ -89,10 +92,13 @@ D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\linksrc\Mono.Security.pdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\bin\Debug\ProntuarioApp.dll.mdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\bin\Debug\SlideOverKit.Droid.dll.mdb
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\bin\Debug\Xamarin.Forms.Material.dll.mdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\linksrc\ProntuarioApp.dll.mdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\linksrc\SlideOverKit.Droid.dll.mdb
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\linksrc\Xamarin.Forms.Material.dll.mdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\android\assets\ProntuarioApp.dll.mdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\android\assets\SlideOverKit.Droid.dll.mdb
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\android\assets\Xamarin.Forms.Material.dll.mdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\android\assets\FormsViewGroup.pdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\android\assets\Mono.Android.pdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\android\assets\Mono.Security.pdb
@@ -121,3 +127,4 @@ D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp\
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\bin\Debug\ProntuarioApp.dll.mdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\linksrc\ProntuarioApp.dll.mdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\linksrc\SlideOverKit.Droid.dll.mdb
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.Android\obj\Debug\90\linksrc\Xamarin.Forms.Material.dll.mdb

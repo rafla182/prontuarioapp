@@ -16,6 +16,9 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
+      "jQuery/1.9.0": {
+        "type": "package"
+      },
       "Newtonsoft.Json/12.0.1": {
         "type": "package",
         "compile": {
@@ -71,6 +74,12 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "uikit/2.25.0": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.9.0"
         }
       },
       "Xamarin.Android.Arch.Core.Common/1.1.1.1": {
@@ -883,6 +892,22 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.Visual.Material/3.6.0.264807": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Design": "28.0.0.1",
+          "Xamarin.Android.Support.v7.AppCompat": "28.0.0.1"
+        },
+        "compile": {
+          "lib/MonoAndroid90/Xamarin.Forms.Material.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid90/Xamarin.Forms.Material.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets": {}
+        }
+      },
       "ProntuarioApp/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -890,7 +915,9 @@
           "Dapper": "1.60.1",
           "Newtonsoft.Json": "12.0.1",
           "SlideOverKit": "2.1.6.2",
-          "Xamarin.Forms": "3.6.0.264807"
+          "Xamarin.Forms": "3.6.0.264807",
+          "Xamarin.Forms.Visual.Material": "3.6.0.264807",
+          "uikit": "2.25.0"
         },
         "compile": {
           "bin/placeholder/ProntuarioApp.dll": {}
@@ -917,6 +944,26 @@
         "lib/netstandard1.3/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
+    "jQuery/1.9.0": {
+      "sha512": "bS6OGSd/QL39vKKhATpeehgZDCzV6foRJ52EocEGAB29VetwXkQHN6KQIBlBbW9VJzuHr+rQxHYZ13MnPGQ/vw==",
+      "type": "package",
+      "path": "jquery/1.9.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-1.9.0-vsdoc.js",
+        "Content/Scripts/jquery-1.9.0.js",
+        "Content/Scripts/jquery-1.9.0.min.js",
+        "Content/Scripts/jquery-1.9.0.min.map",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-1.9.0.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.1.9.0.nupkg.sha512",
+        "jquery.nuspec"
       ]
     },
     "Newtonsoft.Json/12.0.1": {
@@ -1162,6 +1209,233 @@
         "system.reflection.typeextensions.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "uikit/2.25.0": {
+      "sha512": "MmW3i2UwI/9mxCz3YO85GRisBYSEfQMqjQOn/wFu31HtUwdu7hiSCSiaN++Pib6tYJNwFm1dLhIiCXPhDwY3dw==",
+      "type": "package",
+      "path": "uikit/2.25.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Content/components/accordion.almost-flat.css",
+        "content/Content/components/accordion.almost-flat.min.css",
+        "content/Content/components/accordion.css",
+        "content/Content/components/accordion.gradient.css",
+        "content/Content/components/accordion.gradient.min.css",
+        "content/Content/components/accordion.min.css",
+        "content/Content/components/autocomplete.almost-flat.css",
+        "content/Content/components/autocomplete.almost-flat.min.css",
+        "content/Content/components/autocomplete.css",
+        "content/Content/components/autocomplete.gradient.css",
+        "content/Content/components/autocomplete.gradient.min.css",
+        "content/Content/components/autocomplete.min.css",
+        "content/Content/components/datepicker.almost-flat.css",
+        "content/Content/components/datepicker.almost-flat.min.css",
+        "content/Content/components/datepicker.css",
+        "content/Content/components/datepicker.gradient.css",
+        "content/Content/components/datepicker.gradient.min.css",
+        "content/Content/components/datepicker.min.css",
+        "content/Content/components/dotnav.almost-flat.css",
+        "content/Content/components/dotnav.almost-flat.min.css",
+        "content/Content/components/dotnav.css",
+        "content/Content/components/dotnav.gradient.css",
+        "content/Content/components/dotnav.gradient.min.css",
+        "content/Content/components/dotnav.min.css",
+        "content/Content/components/form-advanced.almost-flat.css",
+        "content/Content/components/form-advanced.almost-flat.min.css",
+        "content/Content/components/form-advanced.css",
+        "content/Content/components/form-advanced.gradient.css",
+        "content/Content/components/form-advanced.gradient.min.css",
+        "content/Content/components/form-advanced.min.css",
+        "content/Content/components/form-file.almost-flat.css",
+        "content/Content/components/form-file.almost-flat.min.css",
+        "content/Content/components/form-file.css",
+        "content/Content/components/form-file.gradient.css",
+        "content/Content/components/form-file.gradient.min.css",
+        "content/Content/components/form-file.min.css",
+        "content/Content/components/form-password.almost-flat.css",
+        "content/Content/components/form-password.almost-flat.min.css",
+        "content/Content/components/form-password.css",
+        "content/Content/components/form-password.gradient.css",
+        "content/Content/components/form-password.gradient.min.css",
+        "content/Content/components/form-password.min.css",
+        "content/Content/components/form-select.almost-flat.css",
+        "content/Content/components/form-select.almost-flat.min.css",
+        "content/Content/components/form-select.css",
+        "content/Content/components/form-select.gradient.css",
+        "content/Content/components/form-select.gradient.min.css",
+        "content/Content/components/form-select.min.css",
+        "content/Content/components/htmleditor.almost-flat.css",
+        "content/Content/components/htmleditor.almost-flat.min.css",
+        "content/Content/components/htmleditor.css",
+        "content/Content/components/htmleditor.gradient.css",
+        "content/Content/components/htmleditor.gradient.min.css",
+        "content/Content/components/htmleditor.min.css",
+        "content/Content/components/nestable.almost-flat.css",
+        "content/Content/components/nestable.almost-flat.min.css",
+        "content/Content/components/nestable.css",
+        "content/Content/components/nestable.gradient.css",
+        "content/Content/components/nestable.gradient.min.css",
+        "content/Content/components/nestable.min.css",
+        "content/Content/components/notify.almost-flat.css",
+        "content/Content/components/notify.almost-flat.min.css",
+        "content/Content/components/notify.css",
+        "content/Content/components/notify.gradient.css",
+        "content/Content/components/notify.gradient.min.css",
+        "content/Content/components/notify.min.css",
+        "content/Content/components/placeholder.almost-flat.css",
+        "content/Content/components/placeholder.almost-flat.min.css",
+        "content/Content/components/placeholder.css",
+        "content/Content/components/placeholder.gradient.css",
+        "content/Content/components/placeholder.gradient.min.css",
+        "content/Content/components/placeholder.min.css",
+        "content/Content/components/progress.almost-flat.css",
+        "content/Content/components/progress.almost-flat.min.css",
+        "content/Content/components/progress.css",
+        "content/Content/components/progress.gradient.css",
+        "content/Content/components/progress.gradient.min.css",
+        "content/Content/components/progress.min.css",
+        "content/Content/components/search.almost-flat.css",
+        "content/Content/components/search.almost-flat.min.css",
+        "content/Content/components/search.css",
+        "content/Content/components/search.gradient.css",
+        "content/Content/components/search.gradient.min.css",
+        "content/Content/components/search.min.css",
+        "content/Content/components/slidenav.almost-flat.css",
+        "content/Content/components/slidenav.almost-flat.min.css",
+        "content/Content/components/slidenav.css",
+        "content/Content/components/slidenav.gradient.css",
+        "content/Content/components/slidenav.gradient.min.css",
+        "content/Content/components/slidenav.min.css",
+        "content/Content/components/slider.almost-flat.css",
+        "content/Content/components/slider.almost-flat.min.css",
+        "content/Content/components/slider.css",
+        "content/Content/components/slider.gradient.css",
+        "content/Content/components/slider.gradient.min.css",
+        "content/Content/components/slider.min.css",
+        "content/Content/components/slideshow.almost-flat.css",
+        "content/Content/components/slideshow.almost-flat.min.css",
+        "content/Content/components/slideshow.css",
+        "content/Content/components/slideshow.gradient.css",
+        "content/Content/components/slideshow.gradient.min.css",
+        "content/Content/components/slideshow.min.css",
+        "content/Content/components/sortable.almost-flat.css",
+        "content/Content/components/sortable.almost-flat.min.css",
+        "content/Content/components/sortable.css",
+        "content/Content/components/sortable.gradient.css",
+        "content/Content/components/sortable.gradient.min.css",
+        "content/Content/components/sortable.min.css",
+        "content/Content/components/sticky.almost-flat.css",
+        "content/Content/components/sticky.almost-flat.min.css",
+        "content/Content/components/sticky.css",
+        "content/Content/components/sticky.gradient.css",
+        "content/Content/components/sticky.gradient.min.css",
+        "content/Content/components/sticky.min.css",
+        "content/Content/components/tooltip.almost-flat.css",
+        "content/Content/components/tooltip.almost-flat.min.css",
+        "content/Content/components/tooltip.css",
+        "content/Content/components/tooltip.gradient.css",
+        "content/Content/components/tooltip.gradient.min.css",
+        "content/Content/components/tooltip.min.css",
+        "content/Content/components/upload.almost-flat.css",
+        "content/Content/components/upload.almost-flat.min.css",
+        "content/Content/components/upload.css",
+        "content/Content/components/upload.gradient.css",
+        "content/Content/components/upload.gradient.min.css",
+        "content/Content/components/upload.min.css",
+        "content/Content/uikit.almost-flat.css",
+        "content/Content/uikit.almost-flat.min.css",
+        "content/Content/uikit.css",
+        "content/Content/uikit.gradient.css",
+        "content/Content/uikit.gradient.min.css",
+        "content/Content/uikit.min.css",
+        "content/fonts/FontAwesome.otf",
+        "content/fonts/fontawesome-webfont.ttf",
+        "content/fonts/fontawesome-webfont.woff",
+        "content/fonts/fontawesome-webfont.woff2",
+        "content/scripts/components/accordion.js",
+        "content/scripts/components/accordion.min.js",
+        "content/scripts/components/autocomplete.js",
+        "content/scripts/components/autocomplete.min.js",
+        "content/scripts/components/datepicker.js",
+        "content/scripts/components/datepicker.min.js",
+        "content/scripts/components/form-password.js",
+        "content/scripts/components/form-password.min.js",
+        "content/scripts/components/form-select.js",
+        "content/scripts/components/form-select.min.js",
+        "content/scripts/components/grid-parallax.js",
+        "content/scripts/components/grid-parallax.min.js",
+        "content/scripts/components/grid.js",
+        "content/scripts/components/grid.min.js",
+        "content/scripts/components/htmleditor.js",
+        "content/scripts/components/htmleditor.min.js",
+        "content/scripts/components/lightbox.js",
+        "content/scripts/components/lightbox.min.js",
+        "content/scripts/components/nestable.js",
+        "content/scripts/components/nestable.min.js",
+        "content/scripts/components/notify.js",
+        "content/scripts/components/notify.min.js",
+        "content/scripts/components/pagination.js",
+        "content/scripts/components/pagination.min.js",
+        "content/scripts/components/parallax.js",
+        "content/scripts/components/parallax.min.js",
+        "content/scripts/components/search.js",
+        "content/scripts/components/search.min.js",
+        "content/scripts/components/slider.js",
+        "content/scripts/components/slider.min.js",
+        "content/scripts/components/slideset.js",
+        "content/scripts/components/slideset.min.js",
+        "content/scripts/components/slideshow-fx.js",
+        "content/scripts/components/slideshow-fx.min.js",
+        "content/scripts/components/slideshow.js",
+        "content/scripts/components/slideshow.min.js",
+        "content/scripts/components/sortable.js",
+        "content/scripts/components/sortable.min.js",
+        "content/scripts/components/sticky.js",
+        "content/scripts/components/sticky.min.js",
+        "content/scripts/components/timepicker.js",
+        "content/scripts/components/timepicker.min.js",
+        "content/scripts/components/tooltip.js",
+        "content/scripts/components/tooltip.min.js",
+        "content/scripts/components/upload.js",
+        "content/scripts/components/upload.min.js",
+        "content/scripts/core/alert.js",
+        "content/scripts/core/alert.min.js",
+        "content/scripts/core/button.js",
+        "content/scripts/core/button.min.js",
+        "content/scripts/core/core.js",
+        "content/scripts/core/core.min.js",
+        "content/scripts/core/cover.js",
+        "content/scripts/core/cover.min.js",
+        "content/scripts/core/dropdown.js",
+        "content/scripts/core/dropdown.min.js",
+        "content/scripts/core/grid.js",
+        "content/scripts/core/grid.min.js",
+        "content/scripts/core/modal.js",
+        "content/scripts/core/modal.min.js",
+        "content/scripts/core/nav.js",
+        "content/scripts/core/nav.min.js",
+        "content/scripts/core/offcanvas.js",
+        "content/scripts/core/offcanvas.min.js",
+        "content/scripts/core/scrollspy.js",
+        "content/scripts/core/scrollspy.min.js",
+        "content/scripts/core/smooth-scroll.js",
+        "content/scripts/core/smooth-scroll.min.js",
+        "content/scripts/core/switcher.js",
+        "content/scripts/core/switcher.min.js",
+        "content/scripts/core/tab.js",
+        "content/scripts/core/tab.min.js",
+        "content/scripts/core/toggle.js",
+        "content/scripts/core/toggle.min.js",
+        "content/scripts/core/touch.js",
+        "content/scripts/core/touch.min.js",
+        "content/scripts/core/utility.js",
+        "content/scripts/core/utility.min.js",
+        "content/scripts/uikit.js",
+        "content/scripts/uikit.min.js",
+        "uikit.2.25.0.nupkg.sha512",
+        "uikit.nuspec"
       ]
     },
     "Xamarin.Android.Arch.Core.Common/1.1.1.1": {
@@ -2114,6 +2388,25 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.Visual.Material/3.6.0.264807": {
+      "sha512": "VI+T8Wl6BN9UQZjbTOR8DhsP8aIOW84m+PxaOguyY6FmUVCMWR0da97np/88dBTolkTIvZv1xFP4YJ3uN1LnEg==",
+      "type": "package",
+      "path": "xamarin.forms.visual.material/3.6.0.264807",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid10/Xamarin.Forms.Visual.Material.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.dll.mdb",
+        "lib/MonoAndroid90/Xamarin.Forms.Material.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Material.pdb",
+        "lib/netstandard1.0/_._",
+        "xamarin.forms.visual.material.3.6.0.264807.nupkg.sha512",
+        "xamarin.forms.visual.material.nuspec"
+      ]
+    },
     "ProntuarioApp/1.0.0": {
       "type": "project",
       "path": "../ProntuarioApp/ProntuarioApp.csproj",
@@ -2130,7 +2423,9 @@
       "Xamarin.Android.Support.v7.AppCompat >= 28.0.0.1",
       "Xamarin.Android.Support.v7.CardView >= 28.0.0.1",
       "Xamarin.Android.Support.v7.MediaRouter >= 28.0.0.1",
-      "Xamarin.Forms >= 3.6.0.264807"
+      "Xamarin.Forms >= 3.6.0.264807",
+      "Xamarin.Forms.Visual.Material >= 3.6.0.264807",
+      "uikit >= 2.25.0"
     ]
   },
   "packageFolders": {
@@ -2155,8 +2450,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.peixeurbano.local/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid90": {
@@ -2202,6 +2496,14 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[3.6.0.264807, )"
+          },
+          "Xamarin.Forms.Visual.Material": {
+            "target": "Package",
+            "version": "[3.6.0.264807, )"
+          },
+          "uikit": {
+            "target": "Package",
+            "version": "[2.25.0, )"
           }
         }
       }

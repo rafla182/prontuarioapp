@@ -21,9 +21,9 @@ namespace ProntuarioApp.Services
         {
         }
 
-        public async  Task<BaseApiResult<List<Paciente>>> BuscarTodosPacientes()
+        public async  Task<BaseApiResult<List<Paciente>>> BuscarTodosPacientes(string nome)
         {
-            return await ProntuarioApiService.Current.PostAsync<List<Paciente>>("pacientes/buscar", new BuscaRequest() { Nome = "Fabiana"} );
+            return await ProntuarioApiService.Current.PostAsync<List<Paciente>>("pacientes/buscar", new BuscaRequest() { Nome = nome } );
         }
 
         public async Task<BaseApiResult<List<Atendimento>>> ListarAtendimentos(int id)
@@ -34,6 +34,26 @@ namespace ProntuarioApp.Services
         public async Task<BaseApiResult<List<Prescricao>>> ListarPrescricao(int id)
         {
             return await ProntuarioApiService.Current.GetAsync<List<Prescricao>>("pacientes/medicamentos/" + id);
+        }
+
+        public async Task<BaseApiResult<Medico>> BuscarMedico(int id)
+        {
+            return await ProntuarioApiService.Current.GetAsync<Medico>("medico/" + id);
+        }
+
+        public async Task<BaseApiResult<List<Paciente>>> ListaPacientesPorMedico(int id)
+        {
+            return await ProntuarioApiService.Current.GetAsync<List<Paciente>>("pacientes/medico/" + id);
+        }
+
+        public async Task<BaseApiResult<List<Cirurgia>>> ListarCirurgias(int id)
+        {
+            return await ProntuarioApiService.Current.GetAsync<List<Cirurgia>>("pacientes/cirurgias/" + id);
+        }
+
+        public async Task<BaseApiResult<Medico>> Login(string emailText, string senhaText)
+        {
+            return await ProntuarioApiService.Current.PostAsync<Medico>("medico/login", new LoginRequest(){ Email = emailText, Password = senhaText });
         }
     }
 }

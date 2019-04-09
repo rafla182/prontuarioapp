@@ -24,7 +24,7 @@ namespace ProntuarioApp.iOS
         {
 
             global::Xamarin.Forms.Forms.Init();
-
+            global::Xamarin.Forms.FormsMaterial.Init();
             SlideOverKit.iOS.SlideOverKit.Init();
 
             LoadApplication(new App());

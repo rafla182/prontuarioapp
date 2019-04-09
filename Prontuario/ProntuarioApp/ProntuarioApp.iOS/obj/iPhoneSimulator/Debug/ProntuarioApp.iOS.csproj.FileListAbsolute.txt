@@ -49,8 +49,12 @@ D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\bin\iPhoneSimulator\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Material.dll
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Material.pdb
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\bin\iPhoneSimulator\Debug\MaterialComponents.dll
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\bin\iPhoneSimulator\Debug\ProntuarioApp.dll
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\bin\iPhoneSimulator\Debug\ProntuarioApp.pdb
+D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\bin\iPhoneSimulator\Debug\ProntuarioApp.dll.mdb
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
 D:\projetos\prontuario-app\prontuarioapp\Prontuario\ProntuarioApp\ProntuarioApp.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items

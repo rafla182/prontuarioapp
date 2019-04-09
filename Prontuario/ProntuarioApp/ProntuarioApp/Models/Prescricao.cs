@@ -9,5 +9,6 @@ namespace ProntuarioApp.Models
         public int Id { get; set; }
         public string Medicamentacao { get; set; }
         public string Queixa { get; set; }
+        public string Data { get; set; }
     }
 }

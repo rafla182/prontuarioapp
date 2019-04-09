@@ -3,9 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProntuarioApp.Views.MasterPage.Detail"
              Title="Prontuário Online"
+             Visual="Material"
              BackgroundColor="#FFF">
     <StackLayout Padding="30">
-        <Image Source="prontuario.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="120" HeightRequest="120"></Image>
-        <Button BackgroundColor="#60ADDE" FontSize="Small" TextColor="#FFF"  Text="Pacientes" x:Name="btnGoPatient"></Button>
+        <Image Source="prontuario.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150"></Image>
+        <Button BackgroundColor="#60ADDE" FontSize="14" TextColor="#FFF"  Text="Buscar Pacientes" x:Name="btnGoPaciente" Padding="5"></Button>
+        <Button BackgroundColor="#60ADDE" FontSize="14" TextColor="#FFF"  Text="Meus Pacientes" x:Name="btnGoMyPaciente" Padding="5"></Button>
+        <Button BackgroundColor="#60ADDE" FontSize="14" TextColor="#FFF"  Text="Perfil" x:Name="btnGoPerfil" Padding="5"></Button>
+        <Button BackgroundColor="#ffb3b3" FontSize="14" VerticalOptions="End" TextColor="#FFF"  Text="Sair" x:Name="btnGoLogout" Padding="5"></Button>
     </StackLayout>
 </ContentPage>
