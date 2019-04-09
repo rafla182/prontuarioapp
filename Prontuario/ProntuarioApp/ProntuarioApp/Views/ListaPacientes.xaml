@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProntuarioApp.Views.ListaPacientes" Visual="Material">
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
+            <StackLayout >
+                <StackLayout  Padding="10">
+                    <Label Text="LISTA DE PACIENTES" TextColor="#000" FontSize="18" FontAttributes="Bold"></Label>
+                </StackLayout>
+                <StackLayout>
+                    <ListView x:Name="PacientesResponse" ItemSelected="VerPaciente" SelectionMode="Single" HasUnevenRows="True" RowHeight="150" VerticalOptions="StartAndExpand" SeparatorColor="#000" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout  Padding="10" VerticalOptions="FillAndExpand" >
+                                        <Label Text="{Binding Id}"  FontSize="14" IsVisible="false"></Label>
+                                        <Label Text="{Binding Nome, StringFormat='{0:F0}'}"  FontSize="14"></Label>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout IsVisible="{Binding IsLoading}" Padding="12"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+
+                <ActivityIndicator IsRunning="{Binding IsLoading}" Color ="#80000000"/>
+
+                <Label Text="Loading..." HorizontalOptions="Center" TextColor="White"/>
+
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

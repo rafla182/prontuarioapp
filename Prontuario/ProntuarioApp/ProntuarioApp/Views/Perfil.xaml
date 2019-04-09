@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             xmlns:prontuarioApp="clr-namespace:ProntuarioApp;assembly=ProntuarioApp"
+             x:Class="ProntuarioApp.Views.Perfil" Visual="Material">
+    <ContentPage.Content>
+        <StackLayout Padding="30" >
+            <Label Text="DADOS DO MÉDICO" FontSize="18"  TextColor="#000" FontAttributes="Bold"></Label>
+
+            <Label Text="{Binding CPF, StringFormat='CPF: {0:F0}'}" FontSize="14"></Label>
+            <Label Text="{Binding Nome, StringFormat='Nome: {0:F0}'}" FontSize="14"></Label>
+            <Label Text="{Binding Conselho, StringFormat='Conselho: {0:F0}'}" FontSize="14"></Label>
+            <Label Text="{Binding DataNascimento, StringFormat='Data Nascimento: {0:dd/MM/yyyy}'}" FontSize="14"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
