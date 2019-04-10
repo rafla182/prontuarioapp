@@ -14,6 +14,11 @@
                 <Entry x:Name="Email" Placeholder="E-mail" BackgroundColor="Transparent" VerticalOptions="Center"  FontSize="14"></Entry>
                 <Entry x:Name="Senha" Placeholder="Senha" BackgroundColor="Transparent" IsPassword="True" VerticalOptions="Center"  FontSize="14" ></Entry>
                 <Button Text="LOGIN" Margin="0, 10, 0, 0" x:Name="btnLogin" HeightRequest="50" BackgroundColor="#60ADDE"  FontSize="14" TextColor="#FFF" ></Button>
+                <Label  IsVisible="{Binding IsErro}"
+                        x:Name="Erro"
+                        Font="16"
+                        TextColor="DarkGray"
+                        HorizontalOptions="CenterAndExpand"/>
             </StackLayout>
             <StackLayout IsVisible="{Binding IsLoading}" Padding="12"
                          AbsoluteLayout.LayoutFlags="PositionProportional"

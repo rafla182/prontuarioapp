@@ -31,7 +31,12 @@ namespace ProntuarioApp.Views
 
         public async void SearchPaciente(object sender, EventArgs args)
         {
-            Show(sender, args);
+            if (string.IsNullOrEmpty(Nome.Text))
+                Erro.Text = "Favor preencher os dados.";
+            else if (Nome.Text.Length < 3)
+                Erro.Text = "Digite pelo menos 3 caracteres.";
+            else
+                Show(sender, args);
         }
 
         public async void Show(object sender, EventArgs e)
@@ -41,27 +46,33 @@ namespace ProntuarioApp.Views
                 aparece();
 
                 var result = await _pacienteApiService.BuscarTodosPacientes(Nome.Text);
+                await Task.Delay(4000);
+
                 if (result.Success)
                 {
                     IsErro = false;
 
-                    await Task.Delay(4000);
                     some();
 
                     if (result.Result.Count() > 0)
                     {
                         if(result.Result.Count() == 1)
                             App.NavigateMasterDetail(new Menu(result.Result.FirstOrDefault()) {Title = "Menu"});
-
-                        App.NavigateMasterDetail(new ListaPacientes(result.Result) { Title = "Resultado - Pacientes" });
+                        else
+                        {
+                            App.NavigateMasterDetail(
+                                new ListaPacientes(result.Result) {Title = "Resultado - Pacientes"});
+                        }
                     }
-
-                    Erro.Text = "Nenhum paciente encontrado";
+                    else
+                    {
+                        Erro.Text = "Nenhum paciente encontrado.";
+                    }
                 }
                 else
                 {
                     some();
-                    Erro.Text = "Nenhum paciente encontrado";
+                    Erro.Text = "Nenhum paciente encontrado.";
                 }
 
             }

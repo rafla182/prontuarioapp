@@ -11,13 +11,12 @@ namespace ProntuarioApp
 {
     public partial class MainPage : MasterDetailPage
     {
-        public MainPage()
+        public MainPage(Models.Medico result)
         {
            InitializeComponent();
 
             this.Master = new Master();
-            
-            this.Detail = new NavigationPage(new Detail());
+            this.Detail = new NavigationPage(new Detail(result));
             App.MasterDetail = this;
         }
     }

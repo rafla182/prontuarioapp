@@ -4,29 +4,31 @@
              x:Class="ProntuarioApp.Views.MeusPacientes" Visual="Material"
              Style="{DynamicResource corFundoStyle}">
     <ContentPage.Content>
-        <StackLayout Padding="20">
-            <Label Text="MEUS PACIENTES" TextColor="#000" FontSize="18" FontAttributes="Bold"></Label>
-            <Label x:Name="NomePaciente" TextColor="#000" FontSize="18"></Label>
-            <ListView x:Name="MeusPacientesResponse" HasUnevenRows="True" RowHeight="150"  VerticalOptions="StartAndExpand" SeparatorColor="#000">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
-                                <StackLayout Grid.Row="1" Orientation="Horizontal" VerticalOptions="FillAndExpand">
-                                    <Label Text="{Binding Nome, StringFormat='Nome: {0:F0}'}" FontSize="14"></Label>
-                                    <Label Text="{Binding Idade, StringFormat='Idade: {0:F0}'}" FontSize="14"></Label>
-                                </StackLayout>
-                            </Grid>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackLayout>
+        <AbsoluteLayout  HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
+            <StackLayout>
+                <StackLayout  Padding="10">
+                    <Label Text="MEUS PACIENTES" TextColor="#000" FontSize="18" FontAttributes="Bold"></Label>
+                </StackLayout>
+                <StackLayout>
+                    <ListView x:Name="MeusPacientesResponse" ItemSelected="VerPaciente" SelectionMode="Single" HasUnevenRows="True" RowHeight="150" VerticalOptions="StartAndExpand" SeparatorColor="#000">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Padding="10" VerticalOptions="FillAndExpand">
+                                        <Label Text="{Binding Id}"  FontSize="14" IsVisible="false"></Label>
+                                        <Label Text="{Binding Nome, StringFormat='{0:F0}'}" FontSize="14"></Label>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout IsVisible="{Binding IsLoading}" Padding="12"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+                <ActivityIndicator IsRunning="{Binding IsLoading}" Color ="#80000000"/>
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -12,14 +12,18 @@ namespace ProntuarioApp.Views.MasterPage
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Detail : ContentPage
 	{
-		public Detail()
+		public Detail(Medico result)
 		{
 			InitializeComponent();
 
-		    btnGoPaciente.Clicked += async (sender, e) => { await App.NavigateMasterDetail(new Search()); };
-		    btnGoPerfil.Clicked += async (sender, e) => { await App.NavigateMasterDetail(new Perfil()); };
-            btnGoLogout.Clicked += async (sender, e) => { await App.NavigateMasterDetail(new Login()); };
-		    btnGoMyPaciente.Clicked += async (sender, e) => { await App.NavigateMasterDetail(new MeusPacientes( new Medico() { Id = 34 })); };
+		    btnGoPaciente.Clicked += async (sender, e) => { await App.NavigateMasterDetail(new Search() { Title = "Buscar Paciente" }); };
+		    btnGoPerfil.Clicked += async (sender, e) => { await App.NavigateMasterDetail(new Perfil() { Title = "Perfil "}); };
+            btnGoLogout.Clicked += async (sender, e) =>
+            {
+                var pageLogin = new Login() { Title = "Login " };
+                Application.Current.MainPage = new NavigationPage(pageLogin);
+            };
+		    btnGoMyPaciente.Clicked += async (sender, e) => { await App.NavigateMasterDetail(new MeusPacientes( new Medico() { Id = result.Id }) { Title = "Meus Pacientes" }); };
         }
     }
 }

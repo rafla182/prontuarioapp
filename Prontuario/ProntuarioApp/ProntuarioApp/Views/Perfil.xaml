@@ -6,12 +6,13 @@
              x:Class="ProntuarioApp.Views.Perfil" Visual="Material">
     <ContentPage.Content>
         <StackLayout Padding="30" >
-            <Label Text="DADOS DO MÉDICO" FontSize="18"  TextColor="#000" FontAttributes="Bold"></Label>
-
-            <Label Text="{Binding CPF, StringFormat='CPF: {0:F0}'}" FontSize="14"></Label>
-            <Label Text="{Binding Nome, StringFormat='Nome: {0:F0}'}" FontSize="14"></Label>
-            <Label Text="{Binding Conselho, StringFormat='Conselho: {0:F0}'}" FontSize="14"></Label>
-            <Label Text="{Binding DataNascimento, StringFormat='Data Nascimento: {0:dd/MM/yyyy}'}" FontSize="14"></Label>
+            <Image Source="Medico.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150"></Image>
+            <StackLayout Margin="0, 10, 0, 0">
+                <Label Text="{Binding CPF, StringFormat='CPF: {0:F0}'}" FontSize="14"></Label>
+                <Label Text="{Binding Nome, StringFormat='Nome: {0:F0}'}" FontSize="14"></Label>
+                <Label Text="{Binding Conselho, StringFormat='Conselho: {0:F0}'}" FontSize="14"></Label>
+                <Label Text="{Binding DataNascimento, StringFormat='Data Nascimento: {0:dd/MM/yyyy}'}" FontSize="14"></Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -169,4 +169,28 @@
       <Name>ProntuarioApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Atendimentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Cirurgias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Dadosgerais.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Medico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Paciente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Prescricoes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\prontuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\user.png" />
+  </ItemGroup>
 </Project>

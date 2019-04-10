@@ -48,7 +48,7 @@ namespace ProntuarioApp.Services
 
         public async Task<BaseApiResult<List<Cirurgia>>> ListarCirurgias(int id)
         {
-            return await ProntuarioApiService.Current.GetAsync<List<Cirurgia>>("pacientes/cirurgias/" + id);
+            return await ProntuarioApiService.Current.GetAsync<List<Cirurgia>>("pacientes/cirurgia/" + id);
         }
 
         public async Task<BaseApiResult<Medico>> Login(string emailText, string senhaText)

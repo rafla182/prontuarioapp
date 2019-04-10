@@ -15,6 +15,7 @@ namespace ProntuarioApp.Views
     {
 
 	    private readonly PacienteApiService _pacienteApiService;
+        private bool IsErro { get; set; }
 
         public Login()
 		{
@@ -23,30 +24,39 @@ namespace ProntuarioApp.Views
 
 		    IsLoading = false;
             BindingContext = this;
-
+		    IsErro = false;
             btnLogin.Clicked += UserLogin;
         }
 
 
 	    public async void UserLogin(object sender, EventArgs args)
 	    {
-	        Show(sender, args);
+            if(string.IsNullOrEmpty(Email.Text) || string.IsNullOrEmpty(Senha.Text))
+                Erro.Text = "Favor preencher os dados.";
+            else
+                Show(sender, args);
 	    }
 
 	    public async void Show(object sender, EventArgs e)
 	    {
 	        try
 	        {
-	            aparece();
-	            App.Current.MainPage = new MainPage();
-             //   var result = await _pacienteApiService.Login(Email.Text, Senha.Text);
-	            //if (result.Success)
-	            //{
-	            //    some();
-             //       App.Current.MainPage = new MainPage();
-	            //}
+                aparece();
+	            await Task.Delay(4000);
 
-                await Task.Delay(4000);
+                var result = await _pacienteApiService.Login(Email.Text, Senha.Text);
+                if (result.Success)
+                {
+                    if (result.Result != null)
+                    {
+                        some();
+                        App.Current.MainPage = new MainPage(result.Result);
+                    }
+
+                    Erro.Text = "Usuário ou senha incorreto. Tente novamente.";
+                }
+
+                Erro.Text = "Usuário ou senha incorreto. Tente novamente.";
 	            some();
 	        }
 	        catch (Exception ex)
@@ -54,8 +64,8 @@ namespace ProntuarioApp.Views
 	            some();
 	            if (ex != null)
 	            {
-	                //Trate seu erro aqui
-	            }
+	                Erro.Text = "Usuário ou senha incorreto. Tente novamente.";
+                }
 	        }
 	    }
 

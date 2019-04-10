@@ -5,24 +5,14 @@
              xmlns:prontuarioApp="clr-namespace:ProntuarioApp;assembly=ProntuarioApp"
              x:Class="ProntuarioApp.Views.DadosPaciente" Visual="Material">
     <ContentPage.Content>
-        <AbsoluteLayout Padding="30" >
-            <StackLayout>
-                <Label Text="DADOS DO PACIENTE" FontSize="18"  TextColor="#000" FontAttributes="Bold"></Label>
-
+        <StackLayout Padding="30">
+            <Image Source="Paciente.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150"></Image>
+            <StackLayout Margin="0, 10, 0, 0">
                 <Label Text="{Binding Nome, StringFormat='Nome: {0:F0}'}"  FontSize="14"></Label>
                 <Label Text="{Binding Sexo, StringFormat='Sexo: {0:F0}'}"  FontSize="14"></Label>
                 <Label Text="{Binding Idade, StringFormat='Idade: {0:F0}'}"  FontSize="14"></Label>
                 <Label Text="{Binding DataNascimento, StringFormat='Data Nascimento: {0:dd/MM/yyyy}'}" FontSize="14"></Label>
             </StackLayout>
-            <StackLayout IsVisible="{Binding IsLoading}" Padding="12"
-                         AbsoluteLayout.LayoutFlags="PositionProportional"
-                         AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
-
-                <ActivityIndicator IsRunning="{Binding IsLoading}" Color ="#80000000"/>
-
-                <Label Text="Loading..." HorizontalOptions="Center" TextColor="White"/>
-
-            </StackLayout>
-        </AbsoluteLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
