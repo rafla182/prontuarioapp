@@ -54,13 +54,13 @@ namespace ProntuarioApp.Views
 
                     some();
 
-                    if (result.Result.Count() > 0)
+                    if (result.Result.Any())
                     {
                         if(result.Result.Count() == 1)
-                            App.NavigateMasterDetail(new Menu(result.Result.FirstOrDefault()) {Title = "Menu"});
+                            await App.NavigateMasterDetail(new Menu(result.Result.FirstOrDefault()) {Title = "Menu"});
                         else
                         {
-                            App.NavigateMasterDetail(
+                            await App.NavigateMasterDetail(
                                 new ListaPacientes(result.Result) {Title = "Resultado - Pacientes"});
                         }
                     }
